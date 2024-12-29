@@ -1,0 +1,20 @@
+/* src/components/GroupSelector/GroupSelector.module.css */
+
+.groupSelector {
+    margin-bottom: 20px;
+}
+
+.groupSelector label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.groupSelect {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 40px;
+}

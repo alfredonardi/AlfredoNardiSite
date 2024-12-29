@@ -1,0 +1,40 @@
+/* src/components/BOInput/BOInput.module.css */
+
+.boInputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+.inputWithSuffix {
+    position: relative; /* Para posicionar a parte fixa */
+    display: flex;
+    align-items: center;
+}
+
+.boInput {
+    padding: 8px;
+    padding-right: 60px; /* Espaço para a parte fixa '/2025' */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Ajusta a largura para preencher o container */
+    box-sizing: border-box;
+}
+
+.fixedSuffix {
+    position: absolute;
+    right: 10px; /* Posiciona o sufixo corretamente */
+    pointer-events: none; /* Impede interação com o sufixo */
+    color: #000;
+    font-size: 16px;
+}
+
+.versionSelect {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

@@ -1,0 +1,85 @@
+/* Container principal do PhotoReportApp */
+.photoReportApp {
+    display: flex; /* Define o layout como flexível */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos no eixo horizontal */
+    gap: 20px; /* Espaçamento entre os elementos internos */
+    padding: 20px; /* Espaçamento interno do container */
+    background-color: var(--white); /* Define a cor de fundo do container */
+    border-radius: 8px; /* Arredonda os cantos do container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao container */
+    max-width: 1200px; /* Define a largura máxima em telas grandes */
+    width: 100%; /* Permite que o container se ajuste à largura da tela */
+    margin: 0 auto; /* Centraliza o container na tela */
+}
+
+/* Cabeçalho com logotipo e título */
+.headerSection {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    width: 100%; /* Ocupa toda a largura do container */
+}
+
+/* Logotipo da aplicação */
+.logo {
+    width: 150px; /* Largura fixa do logotipo em telas grandes */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaçamento inferior do logotipo */
+}
+
+/* Título principal do aplicativo */
+.title {
+    font-size: 24px; /* Tamanho da fonte do título */
+    color: var(--primary); /* Define a cor do texto do título */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Conteúdo principal da aplicação (fotos, listas, etc.) */
+.appContent {
+    width: 100%; /* Faz com que o conteúdo ocupe toda a largura do container */
+}
+
+/* Botão de limpar relatório */
+.clearButton {
+    background-color: var(--red); /* Define a cor de fundo do botão */
+    color: var(--white); /* Define a cor do texto */
+    font-family: Arial, sans-serif; /* Define a fonte do botão */
+    font-size: 16px; /* Define o tamanho do texto do botão */
+    padding: 10px 20px; /* Define o espaçamento interno do botão */
+    border: none; /* Remove as bordas padrão do botão */
+    border-radius: 4px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Adiciona o ponteiro de clique ao botão */
+    transition: background-color 0.3s; /* Adiciona transição para mudanças de cor */
+    width: 100%; /* Botão ocupa toda a largura do container */
+}
+
+    /* Estado do botão desabilitado */
+    .clearButton:disabled {
+        background-color: #ccc; /* Altera a cor de fundo para cinza */
+        cursor: not-allowed; /* Adiciona um cursor indicando que o botão está inativo */
+    }
+
+    /* Efeito de hover para o botão ativo */
+    .clearButton:hover:not(:disabled) {
+        background-color: #c0392b; /* Altera a cor de fundo ao passar o mouse */
+    }
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    /* Container principal em telas pequenas */
+    .photoReportApp {
+        max-width: 90%; /* Reduz a largura máxima para 90% */
+        padding: 15px; /* Ajusta o espaçamento interno */
+    }
+
+    /* Título em telas pequenas */
+    .title {
+        font-size: 20px; /* Reduz o tamanho da fonte */
+    }
+
+    /* Botão de limpar relatório em telas pequenas */
+    .clearButton {
+        font-size: 14px; /* Reduz o tamanho da fonte */
+        padding: 8px 15px; /* Ajusta o espaçamento interno */
+    }
+}

@@ -1,0 +1,149 @@
+/* Arquivo: src/components/PhotoInput.module.css */
+
+/* Contêiner principal */
+.photoInputContainer {
+    font-family: 'Fira Code', monospace;
+    color: var(--black, #111);
+    background-color: var(--white, #fefefe);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Contêiner dos campos de entrada */
+.inputFieldsContainer {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Campo individual */
+.inputField {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 150px;
+    max-width: 200px;
+}
+
+/* Texto de entrada */
+.inputText {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--gray, #222222);
+    border-radius: 4px;
+    background-color: var(--soft-white, #f1f1f1);
+    color: var(--black, #111);
+}
+
+/* Separador para o campo "AB1234 / 2025" */
+.inputSeparator {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    color: var(--black, #111);
+    align-self: center;
+}
+
+/* Rótulo dos campos */
+.inputLabel {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+    color: var(--black, #111);
+}
+
+/* Campo de seleção */
+.inputSelect {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--gray, #222222);
+    border-radius: 4px;
+    background-color: var(--soft-white, #f1f1f1);
+    color: var(--black, #111);
+}
+
+/* Contêiner dos botões */
+.buttonsContainer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Botões de ação */
+.photoInputButton {
+    background-color: var(--secondary, #0F3460);
+    color: var(--white, #fefefe);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    flex: 1;
+    min-width: 120px;
+    transition: background-color 0.3s ease;
+}
+
+    .photoInputButton:hover {
+        background-color: var(--terceary, #533483);
+    }
+
+/* Lista de pré-visualização */
+.photoPreviewList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.photoPreviewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.photoPreview {
+    max-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.photoDescription {
+    font-size: 0.9rem;
+    color: var(--black, #111);
+}
+
+/* Mensagem quando não há fotos */
+.noPhotosMessage {
+    color: var(--gray, #222222);
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .inputFieldsContainer {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .buttonsContainer {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* Contêiner para código e ano */
+.codeYearContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

@@ -1,0 +1,60 @@
+/* src/components/Camera/Camera.module.css */
+
+.cameraContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.cameraVideo {
+  width: auto;
+  height: 100vh;
+  max-width: 100vw;
+  object-fit: cover;
+}
+
+.buttonGroup {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  z-index: 1000;
+}
+
+.torchButton,
+.captureButton,
+.toggleCameraButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 24px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.torchButton:hover,
+.captureButton:hover,
+.toggleCameraButton:hover {
+  transform: scale(1.1);
+}
+
+.torchButton {
+  background-color: #FF9800;
+}
+
+.captureButton {
+  background-color: #4CAF50;
+}
+
+.toggleCameraButton {
+  background-color: #3498db;
+}

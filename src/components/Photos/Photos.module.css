@@ -1,0 +1,282 @@
+/* Arquivo: src/components/Photos/Photos.module.css */
+
+/* Estilos para cada item de foto */
+.photoItemContainer {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.photoItem {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.photoItemControls {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.photoItemButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+    .photoItemButtons button {
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        transition: background-color 0.3s;
+    }
+
+        .photoItemButtons button:hover {
+            background-color: #0056b3;
+        }
+
+/* Mensagens de erro e estado vazio */
+.errorMessage {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.emptyMessage {
+    text-align: center;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* Lista de fotos */
+.photoList {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Formulário para alterar a posição da foto */
+.positionForm {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+    .positionForm label {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-weight: bold;
+    }
+
+.positionInput {
+    width: 60px;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.positionButton {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .positionButton:hover {
+        background-color: #218838;
+    }
+
+/* Estilos para o container de upload de fotos */
+.photoInputContainer {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.photoInput {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos para o componente AddPhoto */
+.addPhotoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 16px;
+}
+
+.uploadSection, .cameraSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uploadLabel {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+    .uploadLabel:hover {
+        background-color: #0056b3;
+    }
+
+.uploadInput {
+    display: none;
+}
+
+.cameraButton {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .cameraButton:hover {
+        background-color: #218838;
+    }
+
+/* Estilos para a interface da câmera */
+.cameraOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cameraContainer {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.webcam {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.cameraControls {
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.captureButton {
+    background-color: #ffc107;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .captureButton:hover {
+        background-color: #e0a800;
+    }
+
+.closeButton {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .closeButton:hover {
+        background-color: #c82333;
+    }
+
+/* Estilos para o container principal da aplicação */
+.appContainer {
+    padding: 20px;
+}
+
+/* Seção de cabeçalho com logo e título */
+.headerSection {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.title {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Conteúdo principal da aplicação */
+.appContent {
+    margin-top: 24px;
+}
+
+/* Mensagem quando não há fotos adicionadas */
+.noPhotosMessage {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+}
+
+/* Botão para limpar relatório */
+.clearButton {
+    margin-top: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .clearButton:hover {
+        background-color: #c82333;
+    }
+
+    .clearButton:disabled {
+        background-color: #e0aeb8;
+        cursor: not-allowed;
+    }

@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\Camera",
+    "\\src\\components\\Photos",
+    "\\src\\pages",
+    "\\src\\pages\\Aplicativos",
+    "\\src\\pages\\PhotoReportApp",
+    "\\src\\services",
+    "\\src\\utils"
+  ],
+  "SelectedNode": "\\src\\components\\Photos\\PhotoList.jsx",
+  "PreviewInSolutionExplorer": false
+}
